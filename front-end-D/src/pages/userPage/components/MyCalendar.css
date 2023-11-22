@@ -1,0 +1,74 @@
+.rbc-event {
+  /* Định dạng cho các ô chứa sự kiện */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  height: 70px;
+  font-size: 15px;
+  font-weight: 900;
+  
+}
+/* .rbc-row{
+  cursor: pointer;
+}
+.rbc-day-bg{
+  cursor: pointer;
+} */
+.rbc-event-content{
+  height: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+}
+@media (max-width: 768px) {
+  .rbc-event-content{
+    font-size: 12px;
+  }
+}
+.rbc-event-label {
+  /* Định dạng cho nội dung của các ô chứa sự kiện */
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.rbc-btn-group:nth-child(3) {
+  display: none;
+  /* Ẩn menu chuyển đổi */
+}
+
+.rbc-date-cell {
+  text-align: center;
+  font-weight: 800;
+}
+
+.rbc-calendar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* CSS cho overlay */
+.custom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9999; 
+}
+
+/* CSS cho modal */
+.custom-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff; 
+  padding: 20px; 
+  z-index: 10000; 
+}
+.rbc-date-cell button{
+  pointer-events: none; 
+}

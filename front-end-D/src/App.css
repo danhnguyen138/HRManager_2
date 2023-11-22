@@ -1,0 +1,221 @@
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+.sidebar {
+  box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+}
+.nav-item,
+.navbar {
+  z-index: 10000;
+}
+@media  screen and (max-width:800px) {
+  .sidebar{
+    z-index: 10000000;
+  }
+}
+
+.e-dlg-center-center, .e-quick-popup-wrapper.e-device{
+  z-index: 1000000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* color-picker style  */
+
+ #preview {
+  background: transparent
+    url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png')
+    no-repeat;
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+}
+
+.e-input-group:not(.e-float-icon-left), .e-input-group.e-success:not(.e-float-icon-left), .e-input-group.e-warning:not(.e-float-icon-left), .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left){
+  border: none;
+}
+/* Định dạng cho bảng và dữ liệu hàng được chọn */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+#selectedRowData {
+  margin-top: 10px;
+}
+.phancongtime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 1rem; /* optional: add some space between rows */
+  
+}
+
+.phancongtime > select {
+  margin-right: 1rem; /* optional: add some space between select and input fields */
+  appearance: none !important;
+ 
+}
+
+.phancongtime > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.phancongtime > div > label {
+  margin-right: 0.5rem; /* optional: add some space between label and input field */
+}
+
+.phancongtime > div > input {
+  width: 10rem; /* optional: set the width of input fields */
+}
+.ngayphancong{
+  margin-left: 10px;
+  
+  font-weight: 800;
+}
+.danhgiacongviec{
+  display: flex;
+  align-items: center;
+}
+/* .danhgiacongviec input{
+  width: 30px;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+
+} */
+
+.danhgiakpi{
+  text-align: center;
+}
+/* .danhgiakpi label{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.danhgiakpi button{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+} */
+
+
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.tab {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none; 
+}
+
+.tab.active {
+  background-color:#bcc1c7; ;
+  color: #1877F2;
+  border-radius: 10%;
+}
+
+.dropdown {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.06)) repeat scroll 0 0 #F2F2F2;
+  border-color: #FFFFFF #F7F7F7 #F5F5F5;
+  border-image: none;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  display: inline-block;
+  height: 28px;
+  overflow: hidden;
+  position: relative;
+  width: 150px;
+}
+.dropdown:before, .dropdown:after {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #888888 rgba(0, 0, 0, 0);
+  border-image: none;
+  border-style: dashed;
+  border-width: 4px;
+  content: "";
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  width: 0;
+  z-index: 2;
+}
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: medium none;
+}
+.dropdown:after {
+  border-bottom: medium none;
+  border-top-style: solid;
+  margin-top: 7px;
+}
+.dropdown-select {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+  border: 0 none;
+  border-radius: 0;
+  color: #62717A;
+  font-size: 14px;
+  height: 28px;
+  line-height: 14px;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  position: relative;
+  text-shadow: 0 1px #FFFFFF;
+  width: 130%;
+}
+.dropdown-select:focus {
+  color: #394349;
+  outline: 2px solid #49AFF2;
+  outline-offset: -2px;
+  width: 100%;
+  z-index: 3;
+}
+.dropdown-select > option {
+  background: none repeat scroll 0 0 #F2F2F2;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+}
+#congviec {
+  background-color: #F2F2F2;
+  color:black;
+}
